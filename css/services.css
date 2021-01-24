@@ -1,0 +1,830 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: helvetica;
+}
+
+/*header*/
+
+.header{
+	width: 100%;
+	display: inline-block;
+	box-shadow: 0px -3px 3px 3px grey;
+}
+
+.header .logo{
+	width: 70px;
+	height: 50px;
+	background-image: url(images/pelnet.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	align-content: center;
+	margin-left: 20px;
+	float: left;
+}
+
+.header .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.header .sidenav a {
+   padding: 8px 8px 20px 32px;
+   text-decoration: none;
+   font-size: 25px;
+   color: #818181;
+   display: block;
+   transition: 0.3s;
+}
+
+.header .sidenav a:hover {
+   color: #f1f1f1;
+}
+
+.header .sidenav .closebtn {
+   position: absolute;
+   top: 0;
+   right: 25px;
+   font-size: 36px;
+   margin-left: 50px;
+}
+
+.header span{
+   font-size:30px;
+   color:#2b328b;
+   float:right;
+   margin-right:20px;
+   margin-top: 5px;
+   cursor:pointer
+}
+
+.banner{
+	width: 100%;
+	height: 250px;
+	background-image: url(images/pc1.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.banner h4{
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+	padding-top: 100px;
+	color: #fff;
+}
+
+
+/*About*/
+.about{
+	width: 100%
+}
+
+.about p{
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 20px;
+	font-size: 15px;
+	color: #232323;
+	line-height: 22px;
+}
+
+/*services*/
+.services{
+	width: 100%;
+	display: inline-block;
+}
+
+.services .offer{
+	margin-left: 20px;
+	margin-right: 20px;
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+	margin-top: 40px;
+	margin-bottom: 30px;
+	color: #232323;
+}
+
+.services .service{
+	width: 100%;
+	display: inline-block;
+}
+
+.services .service .img{
+	width: 90%;
+	height: 250px;
+	margin: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.b1{
+	background-image: url(images/img9.jpg);
+}
+
+.b2{
+	background-image: url(images/img10.jpg);
+}
+
+.b3{
+	background-image: url(images/img11.jpg);
+}
+
+.b4{
+	background-image: url(images/img12.jpg);
+}
+
+.b5{
+	background-image: url(images/img13.jpg);
+}
+
+.b6{
+	background-image: url(images/img14.jpg);
+}
+
+.services .service .word{
+	text-align: center;
+	margin-top: 30px;
+	font-size: 15px;
+	color: #232323;
+	line-height: 22px;
+}
+
+.services .service .ward{
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 15px;
+	color: #232323;
+	line-height: 22px;
+}
+
+/*body*/
+.body{
+	width: 100%;
+	display: inline-block;
+	background-color: #f3f3f3;
+}
+
+.body h4{
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+	padding-top: 40px;
+	margin: 0px 10px;
+	color: #232323;
+}
+
+.body .list{
+	margin-top: 20px;
+	padding-left: 40px;
+}
+
+.body .list ul li{
+	font-size: 15px;
+	color: #232323;
+	padding-top: 10px;
+}
+
+.body .image{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-image: url(images/img6.png);
+	margin: auto;
+	width: 500px;
+	height: 400px;
+}
+
+/*Plans*/
+.plans{
+	width: 100%;
+	display: inline-block;
+	background-color: #f9f9f9;
+}
+
+.plans h4{
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+	padding-top: 40px;
+	color: #232323;
+}
+
+.plans p{
+    margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 15px;
+	text-align: center;
+	font-size: 15px;
+	color: #232323;
+	line-height: 22px;
+}
+
+.plans .box{
+	width: 320px;
+	margin: 10px auto 0px auto;
+	border-radius: 3px;
+}
+
+.plans .box .collapsible{
+	width: 320px;
+	height: 50px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	margin-left: 1px;
+	background-color: #fff;
+	border: 0.5px solid lightgrey;
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+	font-family: helvetica;
+	font-size: 15px;
+	cursor: pointer;
+	transition: all .5s ease
+}
+
+.plans .box .collapsible:hover{
+    	background-color: #2b328b;
+    	color: #fff;
+    	transition: all .5s ease;
+    }
+
+.plans .box .collapsible:after{
+    	content: '\25BC';
+    	float: right;
+    	font-size: 15px;
+    	margin-right: 5px;
+    }
+
+.plans .box .active:after{
+    	content: "\25B2";
+    }
+
+.plans .box .content{
+    	font-size: 15px;
+    	padding-left: 20px;
+    	overflow: hidden;
+        display: none;
+    }
+
+.plans .box .content ul li{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.content .buy{
+	width: 70px;
+	height: 20px;
+	border: 1px solid #2b328b;
+	color: #2b328b;
+	border-radius: 5px;
+	font-size: 10px;
+	text-align: center;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: 10px auto;
+	transition: all .5s ease;
+}
+
+.content a{
+	text-decoration: none;
+}
+
+.content .buy:hover{
+	border:none;
+	background-color: #2b328b;
+	color: #fff;
+	transition: all .5s ease;
+}
+
+/*benefit*/
+.benefit{
+	width: 100%;
+}
+
+.benefit h4{
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+	padding-top: 40px;
+	color: #232323;
+}
+
+.benefit ul{
+	margin-left: 20px;
+}
+
+.benefit ul li{
+    margin: 20px;
+	font-size: 15px;
+	color: #232323;
+}
+
+
+/* clients*/
+.clients{
+	width: 100%;
+	display: inline-block;
+}
+
+.clients h4{
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+	padding-top: 40px;
+	color: #232323;
+}
+
+.clients .client_logo{
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 20px auto;
+}
+
+.clients .c1, .c3{
+	width: 300px;
+	height: 150px;
+}
+
+.clients .c1{
+	background-image: url(images/citi.png);
+}
+
+.clients .c3{
+	background-image: url(images/pure.png);
+}
+
+.clients .c2, .c4{
+	width: 200px;
+	height: 200px;
+}
+
+.clients .c2{
+	background-image: url(images/strutt.png);
+}
+
+.clients .c4{
+	background-image: url(images/startng.png);
+}
+
+/* partners*/
+.partners{
+	width: 100%;
+	display: inline-block;
+}
+
+.partners h4{
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+	padding-bottom: 40px;
+	color: #232323;
+}
+
+.partners .partner_logo{
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 30px auto;
+	width: 300px;
+	height: 150px;
+}
+
+.partners .d1{
+	background-image: url(images/jiji.png);
+}
+
+.partners .d2{
+	background-image: url(images/fb.png);
+}
+
+.partners .d3{
+	background-image: url(images/olist.png);
+}
+
+.partners .d4{
+	background-image: url(images/google.png);
+}
+
+
+/* footer*/
+.footer{
+    background-color: #232323;
+}
+
+.footer .logo{
+	width: 70px;
+	height: 50px;
+	background-image: url(images/pelnet.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	align-content: center;
+	margin-left: 20px;
+}
+
+.footer h4{
+	margin-bottom: 10px;
+	margin-top: 10px;
+	font-size: 20px;
+	padding-left: 20px;
+	font-weight: normal;
+	color: lightgrey;
+}
+
+.footer ul li{
+	font-size: 15px;
+	padding: 10px 20px;
+	color: #fff;
+	list-style-type: none;
+}
+
+.footer a{
+	text-decoration: none;
+}
+
+.footer p{
+	font-size: 15px;
+	padding-left: 20px;
+	line-height: 20px;
+	color: #fff
+}
+
+.footer #twitter, #fb, #instagram{
+	width: 30px;
+	height: 30px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.footer #twitter{
+	float: left;
+	margin-left: 20px;
+	background-image: url(images/twitter.png);
+}
+
+.footer #fb{
+	float: left;
+	margin-left: 40px;
+	background-image: url(images/facebook.png);
+}
+
+.footer #instagram{
+	float: left;
+	margin-left: 50px;
+	background-image: url(images/instagram.png);
+}
+
+.footer .btm{
+	clear: both;
+}
+
+.footer #paul{
+	font-size: 15px;
+	text-align: center;
+	font-family: helvetica;
+	margin-top: 50px;
+	padding-bottom: 50px;
+}
+
+
+@media screen and (min-width: 320px)
+{
+	.banner{
+		width: 100%;
+	}
+
+		.body .image{
+	width: 320px;
+}
+
+}
+
+
+@media screen and (min-width: 400px)
+{
+   	.body .image{
+	width: 400px;
+}
+}
+
+@media screen and (min-width: 500px)
+{
+
+		.body .image{
+	width: 450px;
+}
+}
+
+@media screen and (min-width: 600px)
+{
+	.header .logo{
+		height: 70px;
+		width: 90px;
+	}
+
+	.services .service .img{
+    	height: 400px;
+    }
+
+   .body .image{
+	width: 550px;
+}
+
+
+
+}
+
+
+
+
+@media screen and (min-width: 700px)
+{
+
+    .header .sidenav a:hover {
+        color: #ed1c24;
+    }
+
+    .services .service .img{
+    	height: 500px;
+    }
+
+}
+
+
+@media screen and (min-width: 800px)
+{
+	.header .logo{
+		margin-left: 30px;
+	}
+
+	.header span{
+		display: none;
+	}
+
+    .header .sidenav a{
+    	float: left;
+    	display: inline-block;
+    	font-size: 15px;
+    	color: #2b328b;
+    }
+
+     .header .sidenav a:hover {
+        color: #ed1c24;
+    }
+
+	.header .sidenav{
+	   height: 0;
+       width: 100%;
+       position: absolute;
+       z-index: none;
+       background-color: none;
+       overflow-x: unset;
+       display: block;
+       transition: none;
+       padding-top: 0;
+       margin-left: 370px;
+       margin-top: 20px;
+    }
+
+    .header .sidenav .js{
+    	display: none;
+    }
+
+    .about p{
+    	margin-left: 70px;
+    	margin-right: 70px;
+    }
+
+   .services .a1 .word, .services .a1 .ward{
+   	float: left;
+   	width: 40%;
+   	margin-left: 40px;
+   }
+
+   .services .service .img{
+    	height: 250px;
+    }
+
+   .services .service .b1{
+   	float: right;
+   	width: 45%;
+   	margin-right: 20px;
+   	margin-bottom: 20px;
+   }
+
+    .services .a2 .word, .services .a2 .ward{
+   	float: right;
+   	width: 40%;
+   	margin-right: 40px;
+   }
+
+   .services .service .b2{
+   	float: left;
+   	width: 45%;
+   	margin-left: 20px;
+   	margin-bottom: 20px;
+   }
+
+   .services .a3 .word, .services .a3 .ward{
+   	float: left;
+   	width: 40%;
+   	margin-left: 40px;
+   }
+
+   .services .service .b3{
+   	float: right;
+   	width: 45%;
+   	margin-right: 20px;
+   	margin-bottom: 20px;
+   }
+
+   .services .a4 .word, .services .a4 .ward{
+   	float: right;
+   	width: 40%;
+   	margin-right: 40px;
+   }
+
+   .services .service .b4{
+   	float: left;
+   	width: 45%;
+   	margin-left: 20px;
+   	margin-bottom: 20px;
+   }
+
+   .services .a5 .word, .services .a5 .ward{
+   	float: left;
+   	width: 40%;
+   	margin-left: 40px;
+   }
+
+   .services .service .b5{
+   	float: right;
+   	width: 45%;
+   	margin-right: 20px;
+   	margin-bottom: 20px;
+   }
+
+   .services .a6 .word, .services .a6 .ward{
+   	float: right;
+   	width: 40%;
+   	margin-right: 40px;
+   }
+
+   .services .service .b6{
+   	float: left;
+   	width: 45%;
+   	margin-left: 20px;
+   	margin-bottom: 20px;
+   }
+
+   .body .list{
+	float: left;
+}
+
+.body .image{
+	float: right;
+	margin-top: -60px;
+	width: 400px;
+}
+
+
+.clients .client_logo{
+	float: left;
+	margin: 30px 50px;
+}
+
+.partners .partner_logo{
+	float: left;
+	margin: 40px 40px;
+}
+
+}
+
+
+
+@media screen and (min-width: 900px)
+{
+	.header .sidenav{
+       margin-left: 480px;
+    }
+
+     .services .service .img{
+    	height: 300px;
+    }
+
+    .body .image{
+   	width: 500px;
+   }
+
+   	.footer{
+		clear: both;
+	}
+
+	.footer span{
+		float: left;
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+
+	.footer #twitter, #fb, #instagram{
+	width: 40px;
+	height: 40px;
+}
+
+	.btm{
+		clear: both;
+	}
+
+
+}
+
+
+
+@media screen and (min-width: 1000px)
+{
+	.header .sidenav{
+       margin-left: 580px;
+    }
+
+     .services .service .img{
+    	height: 400px;
+    }
+
+	.clients .client_logo{
+	margin: 30px 30px;
+   }
+
+   .partners .partner_logo{
+	margin: 30px 30px;
+  }
+
+
+}
+
+
+@media screen and (min-width: 1100px)
+{
+	.header .sidenav{
+       margin-left: 520px;
+    }
+
+    .header .sidenav a{
+    	padding-left: 40px;
+    	padding-right: 40px;
+    }
+
+     .services .service .img{
+    	height: 500px;
+    }
+
+     .body .list{
+	   padding-left: 80px;
+    }
+}
+
+
+@media screen and (min-width: 1200px)
+{
+	.header .sidenav{
+       margin-left: 610px;
+    }
+     .about p{
+    	margin-left: 100px;
+    	margin-right: 100px;
+   }
+
+   .plans .plan{
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+.benefit ul{
+	margin-left: 40px;
+}
+}
+
+
+@media screen and (min-width: 1400px)
+{
+	.header .sidenav{
+       margin-left: 680px;
+    }
+
+}
